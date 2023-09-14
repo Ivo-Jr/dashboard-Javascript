@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>Dashboard - JS</title>
+</head>
+
+<body>
+  <section class="main">
+    <header>
+      <h2 class="title">Dashboard</h2>
+
+      <div class="header-center">
+        <div class="switch-toggle">
+          <span class="material-symbols-outlined">
+            nightlight
+          </span>
+
+          <span class="material-symbols-outlined switch-actived ">
+            wb_sunny
+          </span>
+        </div>
+
+        <aside class="user">
+          <p>Hello,<span class="emoji">😁</span></p>
+          <h4>Ivo Junior</h4>
+        </aside>
+      </div>
+
+    </header>
+
+    <article class="charts">
+      <div class="polar">
+        <canvas id="polarChart"></canvas>
+      </div>
+
+      <div class="bar">
+        <canvas id="barChart"></canvas>
+      </div>
+    </article>
+
+    <div class="controls">
+      <button class="all selectedControlers" role="0">
+        <h5>Todos</h5>
+      </button>
+      <button class="input" role="1">
+        <h5>Entrada</h5>
+      </button>
+      <button class="output" role="2">
+        <h5>Saídas</h5>
+      </button>
+    </div>
+
+    <div class="container-table">
+      <h3>Registros</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Descrição</th>
+            <th>Valor</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <tr>
+            <td class="icon-table">
+              <span class="material-symbols-outlined">
+                trending_down
+              </span>
+            </td>
+            <td class="description">Conta de Luz</td>
+            <td class="amount">R$ 280,00</td>
+            <td class="date">20/08/2023</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./utils.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>
