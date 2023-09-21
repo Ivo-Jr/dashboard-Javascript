@@ -48,7 +48,7 @@ async function handleBarchartOptions() {
 
 }
 
-// FETCH :
+// FETCH:
 async function handleFetch() {
   const response = await fetch('data.json');
 

@@ -27,6 +27,7 @@ const backgroundColorPolar = [
 ];
 
 const labelsPolarChart = ['1º Quadri', '2º Quadri', '3º Quadri'];
+
 const months = [
   'Janeiro',
   'Fevereiro',
