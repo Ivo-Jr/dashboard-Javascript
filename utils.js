@@ -1,3 +1,8 @@
+function formatDate(dateString) {
+  const [year, month, day] = dateString.split('-');
+  return `${day}/${month}/${year}`
+}
+
 const backgroundColorBarChart = [
   'rgba(255, 99, 132, 0.2)',
   'rgba(255, 159, 64, 0.2)',
